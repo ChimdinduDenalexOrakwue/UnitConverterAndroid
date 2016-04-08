@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$PlaceholderFragment"
+    >
+
+    <TextView android:id="@+id/section_label" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        />
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        android:layout_below="@+id/section_label"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_corner"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:inputType="numberDecimal"
+        android:hint="ENTER"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:elevation="4dp"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/round_corner"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:autoText="false" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_above="@+id/editText2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-20dp"
+         />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-20dp"
+        />
+
+</RelativeLayout>
+</ScrollView>
